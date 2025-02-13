@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body class="body-aplic">
+    
+    <a href="../portifolio.html"><img id="voltar" src="../img/voltar.png"></a>
+    
+
+        <header><h1 class="titulo-aplic">Conversor de Temperaturas</h1></header>
+        
+        <center>
+        <div id="area1" class="area-conversor">
+        <input type="number" id="temperatura-1">
+        
+        <select id="valor-conv-1">
+            <option value="kelvin1">
+                Kelvin
+            </option >
+            <option value="Celcius1">
+                Celcius
+            </option>
+            <option value="Fahrenheit1">
+                Fahrenheit
+            </option>
+        </select>
+        </div>
+
+        <div id="area2" class="area-conversor">
+            <input type="number" id="temperatura-2">
+            
+            <select id="valor-conv-2">
+                <option value="kelvin2">
+                    Kelvin
+                </option >
+                <option value="Celcius2">
+                    Celcius
+                </option>
+                <option value="Fahrenheit2">
+                    Fahrenheit
+                </option>
+            </select>
+            </div>
+        
+     
+
+        
+        
+        <div class="area-conversor" id="limpar-conv">
+
+        <button onclick="converter()" id="converter">Converter</button>
+        <button id="limpar" onclick="limpar()" type="clear">Limpar</button>
+        </div>
+    </center>
+   
+    <script src="../script/conversor.js"></script>
+
+</body>
+</html>

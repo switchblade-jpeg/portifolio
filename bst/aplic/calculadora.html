@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body class="body-aplic">
+    <a href="../portifolio.html"><img id="voltar" src="../img/voltar.png"></a>
+    <center>
+        <header><h1 class="titulo-aplic">Calculadora</h1></header>
+        <div class="div-calculadora">
+            <input id="visor" readonly>
+            <div class="botoes-calc">
+                <button class="btn-calc-op" onclick="adicionar('+')">+</button>
+                <button class="btn-calc" onclick="adicionar('7')">7</button>
+                <button class="btn-calc" onclick="adicionar('8')">8</button>
+                <button class="btn-calc" onclick="adicionar('9')">9</button>
+                <button class="btn-calc-op" onclick="adicionar('-')">-</button>
+                <button class="btn-calc" onclick="adicionar('4')">4</button>
+                <button class="btn-calc" onclick="adicionar('5')">5</button>
+                <button class="btn-calc" onclick="adicionar('6')">6</button>
+                <button class="btn-calc-op" onclick="adicionar('*')">*</button>
+                <button class="btn-calc" onclick="adicionar('1')">1</button>
+                <button class="btn-calc" onclick="adicionar('2')">2</button>
+                <button class="btn-calc" onclick="adicionar('3')">3</button>
+                <button class="btn-calc-op" onclick="adicionar('/')">/</button>
+                <button class="btn-calc" onclick="adicionar('0')">0</button>
+                <button class="btn-calc" onclick="adicionar('.')">.</button>
+                <button class="btn-calc" onclick="calcular('=')">=</button>
+                <button class="btn-calc-op" onclick="limpar()">AC</button>
+            </div>
+
+            </div>
+
+        </div>
+    </center>
+    <script src="../script/calculadora.js"></script>
+</body>
+</html>

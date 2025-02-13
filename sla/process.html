@@ -1,0 +1,18 @@
+<script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const cpf= urlParams.get('cpf');
+        const email = urlParams.get('email');
+        const idade= urlParams.get('idade');
+        document.getElementById('name').textContent = name;
+        document.getElementById('cpf').textContent = cpf;
+        document.getElementById('email').textContent = email;
+        document.getElementById('idade').textContent = idade;
+
+    }
+</script>
+<p>Nome: <span id="name"></span></p>
+<p>CPF: <span id="cpf"></span></p>
+<p>E-Mail: <span id="email"></span></p>
+<p>Idade: <span id="idade"></span></p>
