@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body class="body-aplic">
+    <a href="../portifolio.html"><img id="voltar" src="../img/voltar.png"></a>
+    <center>
+
+<div id="caixa-pergunta1" class="caixa-pergunta">
+    <h2>Quem fez o álbum Graduation?</h2>
+    <img src="../img/k2.jpg" id="img-perguntas" alt="imagem-pergunta1">
+    <br>
+    <button class="btn-quiz" id="certo" onclick="certo(1)">Kanye West</button>
+    <button class="btn-quiz" onclick="errado(1)">Jay-Z</button>
+    <button class="btn-quiz" onclick="errado(1)">André 3000</button>
+    <button class="btn-quiz" onclick="errado(1)">The Weeknd</button>
+</div>
+
+<div id="caixa-pergunta2" id="img-perguntas" class="caixa-pergunta">
+    <h2>Quem fez a música "Amiga da minha mulher?"</h2>
+    <img src="../img/seujorge.jpg" alt="imagem-pergunta2" class="img-perguntas">
+    <br> 
+    <button class="btn-quiz" onclick="errado(2)">Mozart</button>
+    <button class="btn-quiz" id="certo" onclick="certo(2)">Seu Jorge</button>
+    <button class="btn-quiz" onclick="errado(2)">Jorge Ben</button>
+    <button class="btn-quiz" onclick="errado(2)">Djavan</button>
+</div>
+
+<div id="caixa-pergunta3" id="img-perguntas" class="caixa-pergunta">
+    <h2>Que banda fez Hybrid Theory?</h2>
+    <img src="../img/hybrid-theory.jpg" alt="imagem-pergunta3" class="img-perguntas">
+    <br>
+    <button class="btn-quiz" onclick="errado(3)">Slipknot</button>
+    <button class="btn-quiz" onclick="errado(3)">System of a Down</button>
+    <button class="btn-quiz" id="certo" onclick="certo(3)">Linkin Park</button>
+    <button class="btn-quiz" onclick="errado(3)">Limp Bizkit</button>
+</div>
+
+<div id="caixa-pergunta4" id="img-perguntas" class="caixa-pergunta" >
+    <h2>Quem foi o vocalista da banda "Legião Urbana"?</h2>
+    <img src="../img/images.jpg" alt="imagem-pergunta4" class="img-perguntas">
+    <br>
+    <button class="btn-quiz" onclick="errado(4)">Max Cavalera</button>
+    <button class="btn-quiz" id="certo" onclick="certo(4)">Renato Russo</button>
+    <button class="btn-quiz" onclick="errado(4)">Moraes Moreira</button>
+    <button class="btn-quiz" onclick="errado(4)">Bell Marques</button>
+</div>
+
+<div id="caixa-pergunta5" id="img-perguntas" class="caixa-pergunta" >
+    <h2>Quem é esse?</h2>
+    <img src="../img/kendrick-lamar-19517_300x300.jpg" alt="imagem-pergunta5" class="img-perguntas">
+    <br>
+    <button class="btn-quiz" onclick="errado(5)">Travis Scott</button>
+    <button class="btn-quiz" onclick="errado(5)"> Kid Cudi</button>
+    <button class="btn-quiz" onclick="errado(5)">Drake</button>
+    <button class="btn-quiz" id="certo" onclick="certo(5)">Kendrick Lamar</button>
+</div>
+
+<div id="final">
+    <h2>Fim do quiz!</h2>
+    <p id="resultado"></p>
+    <button id="jogar-novamente" class="btn-quiz" onclick="jogarNovamente()">Jogar novamente</button>
+</div>
+
+
+
+
+
+    </center>
+    <script src="../script/quiz.js"></script>
+</body>
+</html>
+
